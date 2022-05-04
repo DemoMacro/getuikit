@@ -1,0 +1,43 @@
+{
+  "name": "@getuikit/vue",
+  "version": "0.0.0",
+  "description": "A library of UIKit-style Vue 3 UI components powered by Demo Macro.",
+  "main": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "unbuild"
+  },
+  "lint-staged": {
+    "*.{js,vue,ts}": "eslint --cache",
+    "*.**": "prettier --check --ignore-unknown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "getuikit",
+    "vue",
+    "vue3",
+    "nuxt",
+    "component",
+    "library",
+    "ui",
+    "uikit"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "devDependencies": {
+    "vue": "^3.2.33"
+  }
+}

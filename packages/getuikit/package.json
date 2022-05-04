@@ -1,0 +1,38 @@
+{
+  "name": "@getuikit/core",
+  "version": "0.0.0",
+  "description": "A UIKit-style front-end framework powered by Demo Macro.",
+  "main": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "pnpm unbuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "getuikit",
+    "front-end",
+    "framework",
+    "ui",
+    "uikit"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "dependencies": {
+    "@getuikit/core": "workspace:*",
+    "@getuikit/css": "workspace:*",
+    "@getuikit/icons": "workspace:*"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "@getuikit/css",
+  "version": "0.0.0",
+  "description": "A UIKit-style front-end framework powered by Demo Macro.",
+  "main": "src/getuikit.scss",
+  "browser": "dist/getuikit.css",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "webpack -w",
+    "build": "rm -rf ./dist & webpack & rm -rf ./dist/*.js",
+    "prepack": "pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "getuikit",
+    "front-end",
+    "framework",
+    "ui",
+    "uikit"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "devDependencies": {
+    "css-declaration-sorter": "^6.2.2",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.13",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.4",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
