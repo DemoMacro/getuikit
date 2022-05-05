@@ -67,7 +67,7 @@ importers:
   packages/icons:
     specifiers: {}
 
-  packages/vue-components:
+  packages/vue-component:
     specifiers:
       vue: ^3.2.33
     devDependencies:

@@ -10,9 +10,9 @@ Inspired by [UIKit](https://github.com/uikit/uikit), the core and style files we
 ## Packages
 
 - [getuikit](./packages/getuikit/README.md)
-- [core](./packages/core/README.md)
-- [icons](./packages/icons/README.md) - A library of UIKit-style icons powered by Demo Macro.
-- [vue compoennts](./packages/vue-components/README.md) - A library of UIKit-style Vue 3 UI components powered by Demo Macro.
+- [@getuikit/core](./packages/core/README.md)
+- [@getuikit/icons](./packages/icons/README.md) - A library of UIKit-style icons powered by Demo Macro.
+- [@getuikit/vue](./packages/vue-components/README.md) - A library of UIKit-style Vue 3 UI components powered by Demo Macro.
 
 ## Credits
 

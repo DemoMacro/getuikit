@@ -9,10 +9,6 @@
   "scripts": {
     "prepack": "unbuild"
   },
-  "lint-staged": {
-    "*.{js,vue,ts}": "eslint --cache",
-    "*.**": "prettier --check --ignore-unknown"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DemoMacro/getuikit.git"
