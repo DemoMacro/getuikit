@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "devDependencies": {
-    "vue": "^3.2.33"
+    "vue": "3.2.33"
   }
 }
