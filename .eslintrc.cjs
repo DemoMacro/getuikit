@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@funish/eslint-config"],
+  extends: ["@funish/eslint-config-vue"],
 };

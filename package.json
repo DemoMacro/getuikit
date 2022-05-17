@@ -4,12 +4,14 @@
   "description": "A UIKit-style front-end framework powered by Demo Macro.",
   "private": true,
   "scripts": {
+    "dev": "nuxt dev playground",
     "build": "pnpm -r prepack",
-    "lint:js": "eslint --ext \".js,.jsx,.ts,.tsx,.vue\" --ignore-path .gitignore",
+    "lint:js": "eslint . --ext \".js,.jsx,.ts,.tsx,.vue\" --ignore-path .gitignore",
     "lint:style": "stylelint \"**/*.{css,scss,html,vue,md}\" --ignore-path .gitignore",
     "lint:prettier": "prettier --check . --ignore-path .gitignore",
     "lint": "pnpm lint:js && pnpm lint:style && pnpm lint:prettier",
-    "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix && pnpm lint:style --fix"
+    "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix && pnpm lint:style --fix",
+    "postinstall": "githooks install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": "eslint --cache",
@@ -41,9 +43,11 @@
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
     "@funish/eslint-config-vue": "0.0.1-0",
-    "@funish/githooks": "0.0.2-0",
+    "@funish/githooks": "0.0.2-3",
     "@funish/stylelint-config": "0.0.1-2",
     "eslint": "^8.14.0",
+    "lint-staged": "^12.4.1",
+    "nuxt": "3.0.0-rc.3",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "stylelint": "^14.8.1",
