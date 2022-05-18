@@ -38,7 +38,7 @@
     "css-declaration-sorter": "6.2.2",
     "css-loader": "6.7.1",
     "mini-css-extract-plugin": "2.6.0",
-    "postcss": "8.4.13",
+    "postcss": "8.4.14",
     "postcss-loader": "7.0.0",
     "postcss-preset-env": "7.5.0",
     "sass": "1.51.0",
