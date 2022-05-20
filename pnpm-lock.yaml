@@ -7,7 +7,7 @@ importers:
       '@commitlint/cli': 17.0.0
       '@commitlint/config-conventional': 17.0.0
       '@funish/eslint-config-vue': 0.0.1-0
-      '@funish/githooks': 0.0.2-3
+      '@funish/githooks': 0.0.2-4
       '@funish/stylelint-config': 0.0.1-2
       eslint: 8.15.0
       lint-staged: 12.4.1
@@ -21,7 +21,7 @@ importers:
       '@commitlint/cli': 17.0.0
       '@commitlint/config-conventional': 17.0.0
       '@funish/eslint-config-vue': 0.0.1-0_wnfsgiw6mcte75vpzequherpx4
-      '@funish/githooks': 0.0.2-3
+      '@funish/githooks': 0.0.2-4
       '@funish/stylelint-config': 0.0.1-2_6dycppl4dlxlnjittlrwdbocqy
       eslint: 8.15.0
       lint-staged: 12.4.1
@@ -728,8 +728,8 @@ packages:
       - supports-color
     dev: true
 
-  /@funish/githooks/0.0.2-3:
-    resolution: {integrity: sha512-MS8dKFuD7Zk+Fte+Kjma7XexUprc350E1ARyoQZsVGTFyXzwAy5AsBkqliP2VaHAiyM4eayZAiry/qs2q5tTDw==}
+  /@funish/githooks/0.0.2-4:
+    resolution: {integrity: sha512-LaThlZzaR+mjEPaRJQrabofNOQH+w2c+yerUe38C87fR3XPfDW+MJ2dpdVxHZiJKdWRvmMzRnuqi2hPfG4nFiA==}
     hasBin: true
     dependencies:
       cac: 6.7.12
