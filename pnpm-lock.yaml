@@ -7,7 +7,7 @@ importers:
       '@commitlint/cli': 17.0.0
       '@commitlint/config-conventional': 17.0.0
       '@funish/eslint-config-vue': 0.0.1-0
-      '@funish/githooks': 0.0.2-4
+      '@funish/githooks': 0.0.2
       '@funish/stylelint-config': 0.0.1-2
       eslint: 8.16.0
       lint-staged: 12.4.1
@@ -20,8 +20,8 @@ importers:
     devDependencies:
       '@commitlint/cli': 17.0.0
       '@commitlint/config-conventional': 17.0.0
-      '@funish/eslint-config-vue': 0.0.1-0_wnfsgiw6mcte75vpzequherpx4
-      '@funish/githooks': 0.0.2-4
+      '@funish/eslint-config-vue': 0.0.1-0_nbejtixahgyn5tmxibui2vcoce
+      '@funish/githooks': 0.0.2
       '@funish/stylelint-config': 0.0.1-2_b5vuiqsqxexrbpegdpkdmttcci
       eslint: 8.16.0
       lint-staged: 12.4.1
@@ -728,10 +728,12 @@ packages:
       - supports-color
     dev: true
 
-  /@funish/githooks/0.0.2-4:
-    resolution: {integrity: sha512-LaThlZzaR+mjEPaRJQrabofNOQH+w2c+yerUe38C87fR3XPfDW+MJ2dpdVxHZiJKdWRvmMzRnuqi2hPfG4nFiA==}
+  /@funish/githooks/0.0.2:
+    resolution: {integrity: sha512-2gIe8tv4/J3Vl43uJfRjRRLP6lYIW5Zl1zU3n8l5wnG2Z8YE05AzBVDlAD/IryrpqG5567PM7O9LsMuCR7fHzg==}
     hasBin: true
     dependencies:
+      '@npmcli/package-json': 2.0.0
+      c12: 0.2.7
       cac: 6.7.12
       consola: 2.15.3
       parse-git-config: 3.0.0
@@ -849,6 +851,13 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@npmcli/package-json/2.0.0:
+    resolution: {integrity: sha512-42jnZ6yl16GzjWSH7vtrmWyJDGVa/LXPdpN2rcUWolFjc9ON2N3uz0qdBbQACfmhuJZ2lbKYtmK5qx68ZPLHMA==}
+    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+    dependencies:
+      json-parse-even-better-errors: 2.3.1
     dev: true
 
   /@nuxt/devalue/2.0.0:
@@ -2116,7 +2125,7 @@ packages:
     dev: true
 
   /boolbase/1.0.0:
-    resolution: {integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=}
+    resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
 
   /brace-expansion/1.1.11:
@@ -3941,7 +3950,7 @@ packages:
     dev: true
 
   /gittar/0.1.1:
-    resolution: {integrity: sha1-1pk+phYKhsi3895yKmH3O8meFLQ=}
+    resolution: {integrity: sha512-p+XuqWJpW9ahUuNTptqeFjudFq31o6Jd+maMBarkMAR5U3K9c7zJB4sQ4BV8mIqrTOV29TtqikDhnZfCD4XNfQ==}
     engines: {node: '>=4'}
     dependencies:
       mkdirp: 0.5.6
