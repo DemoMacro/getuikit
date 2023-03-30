@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "devDependencies": {
-    "@commitlint/cli": "17.0.0",
-    "@commitlint/config-conventional": "17.0.0",
+    "@commitlint/cli": "17.5.1",
+    "@commitlint/config-conventional": "17.4.4",
     "@funish/eslint-config-vue": "0.0.1-0",
     "@funish/githooks": "0.0.2-4",
     "@funish/stylelint-config": "0.0.1-2",
