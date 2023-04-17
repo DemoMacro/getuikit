@@ -3,22 +3,12 @@
 ![GitHub](https://img.shields.io/github/license/DemoMacro/getuikit)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
 
-> A UIKit-style front-end framework powered by Demo Macro.
-
-Inspired by [UIKit](https://github.com/uikit/uikit), the core and style files were split and an attempt was made to refactor and extend them into a Vue 3 component library.
+> A UIKit-style front-end framework, powered by Demo Macro.
 
 ## Packages
 
-- [getuikit](./packages/getuikit/README.md)
-- [@getuikit/core](./packages/core/README.md)
-- [@getuikit/icons](./packages/icons/README.md) - A library of UIKit-style icons powered by Demo Macro.
-- [@getuikit/vue](./packages/vue-components/README.md) - A library of UIKit-style Vue 3 UI components powered by Demo Macro.
-
-## Credits
-
-- [Demo Macro](https://github.com/DemoMacro) - Always believe that good things are about to happen.
+- [@getuikit/css](./packages/@getuikit/css/README.md)
 
 ## License
 
-- Code - [MIT](LICENSE) &copy; [Demo Macro](https://imst.xyz/)
-- Documentation - [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) &copy; [Demo Macro](https://imst.xyz/)
+- [MIT](LICENSE) &copy; [Demo Macro](https://imst.xyz/)

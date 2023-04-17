@@ -1,28 +1,28 @@
 {
   "name": "@getuikit/css",
   "version": "0.0.0",
-  "description": "A UIKit-style front-end framework powered by Demo Macro.",
-  "main": "src/getuikit.scss",
-  "browser": "dist/getuikit.css",
+  "description": "UIKit-style preset for UnoCSS, powered by Demo Macro.",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/runtime.global.js",
   "files": [
-    "src",
     "dist"
   ],
   "scripts": {
-    "dev": "rm -rf ./dist & webpack -w --mode development",
-    "build": "rm -rf ./dist & webpack & rm -rf ./dist/*.js",
-    "prepack": "pnpm build"
+    "prepack": "pnpm build:node && pnpm build:cdn",
+    "build:node": "unbuild",
+    "build:cdn": "tsup src/runtime.ts  --format iife --minify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DemoMacro/getuikit.git"
   },
   "keywords": [
-    "getuikit",
+    "uikit",
+    "preset",
+    "unocss",
     "front-end",
-    "framework",
-    "ui",
-    "uikit"
+    "ui"
   ],
   "author": {
     "name": "Demo Macro",
@@ -34,17 +34,9 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
-  "devDependencies": {
-    "css-declaration-sorter": "6.2.2",
-    "css-loader": "6.7.1",
-    "mini-css-extract-plugin": "2.6.0",
-    "postcss": "8.4.14",
-    "postcss-loader": "7.0.0",
-    "postcss-preset-env": "7.6.0",
-    "sass": "1.52.1",
-    "sass-loader": "13.0.0",
-    "uikit": "3.14.1",
-    "webpack": "5.72.1",
-    "webpack-cli": "4.9.2"
+  "dependencies": {
+    "@unocss/core": "0.51.4",
+    "@unocss/preset-mini": "0.51.4",
+    "@unocss/runtime": "0.51.4"
   }
 }

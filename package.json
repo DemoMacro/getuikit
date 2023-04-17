@@ -1,22 +1,13 @@
 {
-  "name": "getuikit-edge",
+  "name": "@demomacro/getuikit",
   "version": "0.0.0",
-  "description": "A UIKit-style front-end framework powered by Demo Macro.",
+  "description": "A UIKit-style front-end framework, powered by Demo Macro.",
   "private": true,
   "scripts": {
-    "dev": "nuxt dev playground",
     "build": "pnpm -r prepack",
-    "lint:js": "eslint . --ext \".js,.jsx,.ts,.tsx,.vue\" --ignore-path .gitignore",
-    "lint:style": "stylelint \"**/*.{css,scss,html,vue,md}\" --ignore-path .gitignore",
-    "lint:prettier": "prettier --check . --ignore-path .gitignore",
-    "lint": "pnpm lint:js && pnpm lint:style && pnpm lint:prettier",
-    "lintfix": "prettier --write --list-different . --ignore-path .gitignore && pnpm lint:js --fix && pnpm lint:style --fix",
+    "check": "rome check . --apply-unsafe && rome format . --write",
+    "format": "prettier --write --list-different . --ignore-path .gitignore",
     "postinstall": "githooks install"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,vue}": "eslint --cache",
-    "*.{css,scss,html,vue,md}": "stylelint",
-    "*.**": "prettier --check --ignore-unknown"
   },
   "repository": {
     "type": "git",
@@ -24,6 +15,8 @@
   },
   "keywords": [
     "uikit",
+    "preset",
+    "unocss",
     "front-end",
     "framework",
     "ui",
@@ -40,18 +33,12 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "devDependencies": {
-    "@commitlint/cli": "17.0.0",
-    "@commitlint/config-conventional": "17.0.0",
-    "@funish/eslint-config-vue": "0.0.1-0",
-    "@funish/githooks": "0.0.2-4",
-    "@funish/stylelint-config": "0.0.1-2",
-    "eslint": "8.16.0",
-    "lint-staged": "12.4.1",
-    "nuxt": "3.0.0-rc.3",
-    "postcss": "8.4.14",
-    "prettier": "2.6.2",
-    "stylelint": "14.8.3",
-    "typescript": "4.6.4",
-    "unbuild": "0.7.4"
+    "@funish/githooks": "edge",
+    "@funish/githooks-config": "edge",
+    "@funish/lint": "edge",
+    "prettier": "2.8.4",
+    "rome": "12.0.0",
+    "tsup": "^6.7.0",
+    "unbuild": "1.2.0"
   }
 }
