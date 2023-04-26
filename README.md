@@ -7,7 +7,7 @@
 
 ## Packages
 
-- [@getuikit/css](./packages/@getuikit/css/README.md)
+- [@getuikit/css](./packages/css/README.md)
 
 ## License
 
