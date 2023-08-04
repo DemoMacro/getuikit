@@ -37,6 +37,6 @@
   "dependencies": {
     "@unocss/core": "0.51.4",
     "@unocss/preset-mini": "0.54.1",
-    "@unocss/runtime": "0.51.4"
+    "@unocss/runtime": "0.54.1"
   }
 }
