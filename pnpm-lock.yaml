@@ -33,8 +33,8 @@ importers:
   packages/css:
     dependencies:
       '@unocss/core':
-        specifier: 0.51.4
-        version: 0.51.4
+        specifier: 0.54.1
+        version: 0.54.1
       '@unocss/preset-mini':
         specifier: 0.54.1
         version: 0.54.1
