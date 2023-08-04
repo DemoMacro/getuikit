@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@getuikit/css": "workspace:*",
-    "typescript": "4.9.5",
+    "typescript": "5.1.6",
     "unocss": "0.51.4",
     "vite": "4.4.8"
   }
