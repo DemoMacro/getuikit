@@ -39,8 +39,8 @@ importers:
         specifier: 0.54.1
         version: 0.54.1
       '@unocss/runtime':
-        specifier: 0.54.1
-        version: 0.54.1
+        specifier: 0.55.2
+        version: 0.55.2
 
   playground/vite:
     devDependencies:
@@ -986,10 +986,20 @@ packages:
   /@unocss/core@0.54.1:
     resolution: {integrity: sha512-lbwvGD91liMNEZs3jwXxLrIHIn/J4dkJpeKdosRdm1xObqrkg0+Zx1fVn6X+GOX74yvjQlzbu/ODZEXFQC3mGw==}
 
+  /@unocss/core@0.55.2:
+    resolution: {integrity: sha512-ZLEES8RDgWoK/vttUzl3PM2bZqL3HvhLgj8xdDa09Xw+JiTlR4c66s+hLn52oCoJTnT9lGsD2j7tTGN9ToSiTA==}
+    dev: false
+
   /@unocss/extractor-arbitrary-variants@0.54.1:
     resolution: {integrity: sha512-4bV0DbDxECihtUbP1UUIXkzSqOkDQ4vJG4VVmKcWbhSMXoRhuOCRkF7j+b9yaDJQtwTfnYgQws0kZFx6jlCVjg==}
     dependencies:
       '@unocss/core': 0.54.1
+
+  /@unocss/extractor-arbitrary-variants@0.55.2:
+    resolution: {integrity: sha512-mHEoFx+ITe3OgFoIUhkCQxRgUjvOJeHtI1Z3Sm8NDMy2vTqOlkSf7NLWEyFfQsSFYqpWGTkaW1XiMZujGMoB/g==}
+    dependencies:
+      '@unocss/core': 0.55.2
+    dev: false
 
   /@unocss/inspector@0.54.1:
     resolution: {integrity: sha512-/7XIsSMPle6RGj2JR6/tP6rpsMy4+wIn4y3DwAda18apfKO2wDuNmcszCkrpc9ju7g3i0TRwvFzl9DAUCUWtDw==}
@@ -1016,6 +1026,13 @@ packages:
     resolution: {integrity: sha512-DBQSHH6f7JmxOS49oaoDkxzsoChgeSfTsvoGOZHWN4PanjOalLfIUBst2Jwl15UBwEILokaWNuKTIhGkDtQcig==}
     dependencies:
       '@unocss/core': 0.54.1
+    dev: true
+
+  /@unocss/preset-attributify@0.55.2:
+    resolution: {integrity: sha512-jn5ulsKpAipsX3Gf2/iSZydgI0eP1ENeoS6rrNBL8zl1mRihnZYFegS75rGYjO6sEfEHrhkBiSHOw7Uv5KtLbw==}
+    dependencies:
+      '@unocss/core': 0.55.2
+    dev: false
 
   /@unocss/preset-icons@0.54.1:
     resolution: {integrity: sha512-H3VloE4fAs9ufK7FDsG5mUEjNneboY2xgrtdOxDoN33NsapNKTaEmMRjV/9Tz9IdrT2WOEe+eb4qwDzwKpHJlw==}
@@ -1032,6 +1049,13 @@ packages:
     dependencies:
       '@unocss/core': 0.54.1
       '@unocss/extractor-arbitrary-variants': 0.54.1
+
+  /@unocss/preset-mini@0.55.2:
+    resolution: {integrity: sha512-jwUsrwtPwMvFVJUP+FVFjq+sp+xQPyFLRPSb89ZI34F1a3EwJ2wioDICLqWjOjY7zei9UgtSY0owBM9vwxw/kg==}
+    dependencies:
+      '@unocss/core': 0.55.2
+      '@unocss/extractor-arbitrary-variants': 0.55.2
+    dev: false
 
   /@unocss/preset-tagify@0.54.1:
     resolution: {integrity: sha512-OeBt+c9AxXiO+AXpHAPudQwkmenIoPGpkDk31Fw2/n4CKdw/bMLodBtQOY1119710h5XDlC0leW6w6xHAnZ8/g==}
@@ -1052,6 +1076,15 @@ packages:
       '@unocss/core': 0.54.1
       '@unocss/preset-mini': 0.54.1
       '@unocss/preset-wind': 0.54.1
+    dev: true
+
+  /@unocss/preset-uno@0.55.2:
+    resolution: {integrity: sha512-8VJXC6+f5YBjUaTkf+EGAembDYMleb0zjkb4hwXxjPIsO+mXixdZC2icCiN/12DLlwH4FzEvObLKns3CGEAZZw==}
+    dependencies:
+      '@unocss/core': 0.55.2
+      '@unocss/preset-mini': 0.55.2
+      '@unocss/preset-wind': 0.55.2
+    dev: false
 
   /@unocss/preset-web-fonts@0.54.1:
     resolution: {integrity: sha512-Z3R7KqF6WuIna0Wz5+KbwS7HXF1N+r/n31H4U+VphSdXcbeC8VLQxwgi+5fvxe1/aaQAyylHrVXPx9+bZfJ8NA==}
@@ -1065,17 +1098,25 @@ packages:
     dependencies:
       '@unocss/core': 0.54.1
       '@unocss/preset-mini': 0.54.1
+    dev: true
+
+  /@unocss/preset-wind@0.55.2:
+    resolution: {integrity: sha512-th/aOokb10ApaiVLNI093mvko4XryJ70oEhzz4tHdSuhnQWf5eY7+k7y9EEYFz8i1OOrKuer0HzUV27llZaufw==}
+    dependencies:
+      '@unocss/core': 0.55.2
+      '@unocss/preset-mini': 0.55.2
+    dev: false
 
   /@unocss/reset@0.54.1:
     resolution: {integrity: sha512-qZcmybayQTX4QP7ya7jteN9IySU/ViK8HcCpixHA1ttUrsQeSURgdy01E74p+TsWDH0SY7vYmOy+HbYfQNycqQ==}
     dev: true
 
-  /@unocss/runtime@0.54.1:
-    resolution: {integrity: sha512-5WrKRAtPNkJkM5fj2yCQVd4jY/VGGmEj7ZGGcRm6w4KeBtw1EnkAZB5Z0ZI3oNEnSEIdustkxR7Y0TRlzwpJaw==}
+  /@unocss/runtime@0.55.2:
+    resolution: {integrity: sha512-niUPOSA0Nh4RzZr9M63+8WDQ8jVR5Aaq2tIRE2k+Paq5SucZDDWQ9DICRa19zQSbfpcw0l0VHMw188ljJhnW+g==}
     dependencies:
-      '@unocss/core': 0.54.1
-      '@unocss/preset-attributify': 0.54.1
-      '@unocss/preset-uno': 0.54.1
+      '@unocss/core': 0.55.2
+      '@unocss/preset-attributify': 0.55.2
+      '@unocss/preset-uno': 0.55.2
     dev: false
 
   /@unocss/scope@0.54.1:
@@ -1240,7 +1281,7 @@ packages:
       ohash: 1.1.2
       pathe: 1.1.1
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.2
+      pkg-types: 1.0.3
       rc9: 2.1.1
     transitivePeerDependencies:
       - supports-color
