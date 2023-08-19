@@ -36,8 +36,8 @@ importers:
         specifier: 0.54.1
         version: 0.54.1
       '@unocss/preset-mini':
-        specifier: 0.54.1
-        version: 0.54.1
+        specifier: 0.55.2
+        version: 0.55.2
       '@unocss/runtime':
         specifier: 0.54.1
         version: 0.54.1
@@ -986,10 +986,20 @@ packages:
   /@unocss/core@0.54.1:
     resolution: {integrity: sha512-lbwvGD91liMNEZs3jwXxLrIHIn/J4dkJpeKdosRdm1xObqrkg0+Zx1fVn6X+GOX74yvjQlzbu/ODZEXFQC3mGw==}
 
+  /@unocss/core@0.55.2:
+    resolution: {integrity: sha512-ZLEES8RDgWoK/vttUzl3PM2bZqL3HvhLgj8xdDa09Xw+JiTlR4c66s+hLn52oCoJTnT9lGsD2j7tTGN9ToSiTA==}
+    dev: false
+
   /@unocss/extractor-arbitrary-variants@0.54.1:
     resolution: {integrity: sha512-4bV0DbDxECihtUbP1UUIXkzSqOkDQ4vJG4VVmKcWbhSMXoRhuOCRkF7j+b9yaDJQtwTfnYgQws0kZFx6jlCVjg==}
     dependencies:
       '@unocss/core': 0.54.1
+
+  /@unocss/extractor-arbitrary-variants@0.55.2:
+    resolution: {integrity: sha512-mHEoFx+ITe3OgFoIUhkCQxRgUjvOJeHtI1Z3Sm8NDMy2vTqOlkSf7NLWEyFfQsSFYqpWGTkaW1XiMZujGMoB/g==}
+    dependencies:
+      '@unocss/core': 0.55.2
+    dev: false
 
   /@unocss/inspector@0.54.1:
     resolution: {integrity: sha512-/7XIsSMPle6RGj2JR6/tP6rpsMy4+wIn4y3DwAda18apfKO2wDuNmcszCkrpc9ju7g3i0TRwvFzl9DAUCUWtDw==}
@@ -1032,6 +1042,13 @@ packages:
     dependencies:
       '@unocss/core': 0.54.1
       '@unocss/extractor-arbitrary-variants': 0.54.1
+
+  /@unocss/preset-mini@0.55.2:
+    resolution: {integrity: sha512-jwUsrwtPwMvFVJUP+FVFjq+sp+xQPyFLRPSb89ZI34F1a3EwJ2wioDICLqWjOjY7zei9UgtSY0owBM9vwxw/kg==}
+    dependencies:
+      '@unocss/core': 0.55.2
+      '@unocss/extractor-arbitrary-variants': 0.55.2
+    dev: false
 
   /@unocss/preset-tagify@0.54.1:
     resolution: {integrity: sha512-OeBt+c9AxXiO+AXpHAPudQwkmenIoPGpkDk31Fw2/n4CKdw/bMLodBtQOY1119710h5XDlC0leW6w6xHAnZ8/g==}
@@ -1240,7 +1257,7 @@ packages:
       ohash: 1.1.2
       pathe: 1.1.1
       perfect-debounce: 0.1.3
-      pkg-types: 1.0.2
+      pkg-types: 1.0.3
       rc9: 2.1.1
     transitivePeerDependencies:
       - supports-color
