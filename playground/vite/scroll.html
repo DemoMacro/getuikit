@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -8,7 +8,7 @@
     <script>
       const { $$, attr, on } = UIkit.util;
       on(document, "change", "#offset", (e) =>
-        attr($$("[uk-scroll]"), "data-offset", e.target.value)
+        attr($$("[uk-scroll]"), "data-offset", e.target.value),
       );
     </script>
   </head>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -138,7 +138,7 @@
           <div class="uk-margin uk-position-relative uk-light">
             <canvas
               class="uk-background-cover"
-              style="background-image: url('public/images/dark.jpg')"
+              style="background-image: url(&quot;public/images/dark.jpg&quot;)"
               width="1000"
               height="300"
             ></canvas>
@@ -212,7 +212,7 @@
           <div class="uk-margin uk-position-relative uk-dark">
             <canvas
               class="uk-background-cover"
-              style="background-image: url('public/images/light.jpg')"
+              style="background-image: url(&quot;public/images/light.jpg&quot;)"
               width="1000"
               height="300"
             ></canvas>
@@ -5063,7 +5063,7 @@
           () =>
             (target.textContent = tracker.movesTo(target.parentNode)
               ? "Moves to"
-              : "Does not move to")
+              : "Does not move to"),
         );
       });
 
@@ -5075,7 +5075,7 @@
       on("#js-dropdown-size-switcher", "change", (e) => {
         const options = $$("option", e.target).map(({ value }) => value);
         for (const el of $$(
-          ".uk-navbar-dropdown:not(.uk-navbar-dropdown-dropbar)"
+          ".uk-navbar-dropdown:not(.uk-navbar-dropdown-dropbar)",
         )) {
           removeClass(el, options);
           addClass(el, e.target.value);

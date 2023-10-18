@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -32,10 +32,10 @@
 
       ready(() => {
         on(document.body, "beforeFilter afterFilter", (e, filter, state) =>
-          console.log(e.type, filter, state)
+          console.log(e.type, filter, state),
         );
         on("#js-animation-switcher", "change", (e) =>
-          attr($$(".js-filter-animation"), "animation", e.target.value)
+          attr($$(".js-filter-animation"), "animation", e.target.value),
         );
       });
     </script>

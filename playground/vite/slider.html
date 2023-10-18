@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -878,7 +878,7 @@
       const { attr, $$, on } = UIkit.util;
       for (const attribute of ["finite", "center", "sets"]) {
         on(`#js-${attribute}-switcher`, "change", (e) =>
-          attr($$("[uk-slider]"), attribute, e.target.value)
+          attr($$("[uk-slider]"), attribute, e.target.value),
         );
       }
     </script>

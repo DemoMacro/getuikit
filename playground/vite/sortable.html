@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -16,8 +16,8 @@
 
       ready(() =>
         on(document.body, "start moved added removed stop", (e, sortable, el) =>
-          console.log(e.type, sortable, el)
-        )
+          console.log(e.type, sortable, el),
+        ),
       );
     </script>
   </head>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -1258,7 +1258,7 @@
         "duration",
       ]) {
         on(`#js-${option}-switcher`, "change", (e) =>
-          attr($$(".js-options"), option, e.target.value)
+          attr($$(".js-options"), option, e.target.value),
         );
       }
     </script>

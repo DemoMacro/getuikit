@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -406,7 +406,7 @@
       const { $, attr, on } = UIkit.util;
 
       on("#js-animation-switcher", "change", (e) =>
-        attr($("#js-lightbox-animation"), "animation", e.target.value)
+        attr($("#js-lightbox-animation"), "animation", e.target.value),
       );
 
       on("#js-lightbox", "click", (e) => {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -717,11 +717,11 @@
     <script>
       const { attr, $$, on } = UIkit.util;
       on("#js-animation-switcher", "change", (e) =>
-        attr($$(".js-slideshow-animation"), "animation", e.target.value)
+        attr($$(".js-slideshow-animation"), "animation", e.target.value),
       );
 
       on("#js-finite-switcher", "change", (e) =>
-        attr($$("[uk-slideshow]"), "finite", e.target.value)
+        attr($$("[uk-slideshow]"), "finite", e.target.value),
       );
     </script>
   </body>

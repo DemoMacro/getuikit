@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-gb" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -734,7 +734,7 @@
         >
           <div
             class="uk-background-cover"
-            style="background-image: url('public/images/photo.jpg')"
+            style="background-image: url(&quot;public/images/photo.jpg&quot;)"
             uk-height-viewport
           ></div>
           <div class="uk-padding-large">
@@ -1065,7 +1065,7 @@
         e.target.blur();
         UIkit.modal.confirm("UIkit confirm!").then(
           () => console.log("Confirmed."),
-          () => console.log("Rejected.")
+          () => console.log("Rejected."),
         );
       });
 

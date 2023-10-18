@@ -8,7 +8,7 @@ export default function presetUIKit(
   options: PresetUIKitOptions = {
     variablePrefix: "uk",
     prefix: "uk",
-  }
+  },
 ): Preset<Theme> {
   return {
     ...presetMini(options),
