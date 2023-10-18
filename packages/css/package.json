@@ -35,8 +35,7 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "dependencies": {
-    "@unocss/core": "0.56.5",
-    "@unocss/preset-mini": "0.56.5",
-    "@unocss/runtime": "0.56.5"
+    "@unocss/runtime": "0.56.5",
+    "unocss": "0.56.5"
   }
 }

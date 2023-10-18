@@ -1,0 +1,46 @@
+{
+  "name": "@getuikit/css",
+  "version": "0.0.0",
+  "description": "UIKit-style icons with iconify, powered by Demo Macro.",
+  "main": "dist/json/index.mjs",
+  "types": "dist/json/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/json/index.mjs",
+      "require": "./dist/json/index.cjs"
+    }
+  },
+  "iconSet": {
+    "icons": "icons.json"
+  },
+  "scripts": {
+    "prepack": "pnpm postinstall && unbuild",
+    "postinstall": "node postinstall.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "uikit",
+    "icons"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "devDependencies": {
+    "@iconify/tools": "3.0.5",
+    "@iconify/types": "*",
+    "uikit": "3.17.4"
+  }
+}
