@@ -1,17 +1,24 @@
 {
   "name": "@getuikit/css",
   "version": "0.0.0",
-  "description": "UIKit-style preset for UnoCSS, powered by Demo Macro.",
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "unpkg": "dist/runtime.global.js",
+  "description": "UIKit-style icons with iconify, powered by Demo Macro.",
+  "main": "dist/json/index.mjs",
+  "types": "dist/json/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/json/index.mjs",
+      "require": "./dist/json/index.cjs"
+    }
+  },
+  "iconSet": {
+    "icons": "icons.json"
+  },
   "scripts": {
-    "prepack": "pnpm build:node && pnpm build:cdn",
-    "build:node": "unbuild",
-    "build:cdn": "tsup src/runtime.ts  --format iife --minify"
+    "prepack": "pnpm postinstall && unbuild",
+    "postinstall": "node postinstall.mjs"
   },
   "repository": {
     "type": "git",
@@ -19,10 +26,7 @@
   },
   "keywords": [
     "uikit",
-    "preset",
-    "unocss",
-    "front-end",
-    "ui"
+    "icons"
   ],
   "author": {
     "name": "Demo Macro",
@@ -34,8 +38,8 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
-  "dependencies": {
-    "@unocss/runtime": "0.56.5",
-    "unocss": "0.56.5"
+  "devDependencies": {
+    "@iconify/tools": "3.0.5",
+    "uikit": "3.17.4"
   }
 }

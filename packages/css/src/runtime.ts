@@ -3,6 +3,7 @@ import presetUIKit from ".";
 
 initUnocssRuntime({
   /* options */
+  autoPrefix: true,
   defaults: {
     presets: [presetUIKit()],
   },
