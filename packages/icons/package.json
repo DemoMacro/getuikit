@@ -1,5 +1,5 @@
 {
-  "name": "@getuikit/css",
+  "name": "@getuikit/icons",
   "version": "0.0.0",
   "description": "UIKit-style icons with iconify, powered by Demo Macro.",
   "main": "dist/json/index.mjs",
@@ -40,7 +40,6 @@
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "devDependencies": {
     "@iconify/tools": "3.0.5",
-    "@iconify/types": "*",
     "uikit": "3.17.4"
   }
 }
