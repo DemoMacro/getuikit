@@ -1,5 +1,4 @@
 import presetUIKit from "@getuikit/css";
-// uno.config.ts
 import {
   defineConfig,
   transformerDirectives,

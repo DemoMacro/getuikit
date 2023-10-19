@@ -1,37 +1,46 @@
 import { icons } from "@getuikit/icons";
+import { definePreset } from "@unocss/core";
 import {
-  definePreset,
   presetAttributify,
   presetIcons,
   presetMini,
   presetTypography,
 } from "unocss";
+import type { AttributifyOptions } from "unocss/preset-attributify";
+import type { IconsOptions } from "unocss/preset-icons";
 import type { PresetMiniOptions } from "unocss/preset-mini";
+import type { TypographyOptions } from "unocss/preset-typography";
 
-export type PresetUIKitOptions = PresetMiniOptions;
+export type PresetUIKitOptions = {
+  base?: PresetMiniOptions;
+  attributify?: AttributifyOptions;
+  icons?: IconsOptions;
+  typography?: TypographyOptions;
+};
 
 export const presetUIKit = definePreset(
   (
     options: PresetUIKitOptions = {
-      variablePrefix: "uk-",
-      prefix: "uk-",
+      base: {
+        variablePrefix: "uk-",
+        prefix: "uk-",
+      },
+      icons: {
+        collections: {
+          uk: async () => {
+            return icons;
+          },
+        },
+      },
     },
   ) => {
     return {
       name: "@getuikit/css",
       presets: [
-        presetMini(options),
-        presetAttributify({
-          prefix: options.prefix as string,
-        }),
-        presetIcons({
-          collections: {
-            uikit: async () => {
-              return icons;
-            },
-          },
-        }),
-        presetTypography(),
+        presetMini(options.base),
+        presetAttributify(options.attributify),
+        presetIcons(options.icons),
+        presetTypography(options.typography),
       ],
     };
   },
