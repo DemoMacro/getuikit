@@ -10,11 +10,14 @@
   "exports": {
     ".": {
       "import": "./dist/json/index.mjs",
-      "require": "./dist/json/index.cjs"
+      "require": "./dist/json/index.js"
     }
   },
   "iconSet": {
-    "icons": "icons.json"
+    "icons": "./dist/json/icons.json",
+    "info": "./dist/json/info.json",
+    "metadata": "./dist/json/metadata.json",
+    "chars": "./dist/json/chars.json"
   },
   "scripts": {
     "prepack": "pnpm postinstall && unbuild",
@@ -38,6 +41,9 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "dependencies": {
+    "@iconify/types": "*"
+  },
   "devDependencies": {
     "@iconify/tools": "3.0.5",
     "uikit": "3.17.4"

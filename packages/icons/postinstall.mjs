@@ -1,11 +1,12 @@
+import { rmSync } from "fs";
 import {
   cleanupSVG,
   exportIconPackage,
+  exportJSONPackage,
   importDirectorySync,
   isEmptyColor,
   parseColorsSync,
   runSVGO,
-  writeJSONFile,
 } from "@iconify/tools";
 
 // Import icons
@@ -54,7 +55,19 @@ iconSet.forEachSync((name, type) => {
 });
 
 // Export
-writeJSONFile("./src/icons.json", iconSet.export());
+rmSync("dist", { recursive: true, force: true });
+
+(async () => {
+  // Target directory
+  const target = "dist/json";
+
+  // Export package
+  await exportJSONPackage(iconSet, {
+    target,
+    module: true,
+    cleanup: true,
+  });
+})();
 
 (async () => {
   // Target directory
