@@ -11,7 +11,11 @@
     ".": {
       "import": "./dist/json/index.mjs",
       "require": "./dist/json/index.js"
-    }
+    },
+    "./icons.json": "./dist/json/icons.json",
+    "./info.json": "./dist/json/info.json",
+    "./metadata.json": "./dist/json/metadata.json",
+    "./chars.json": "./dist/json/chars.json"
   },
   "iconSet": {
     "icons": "./dist/json/icons.json",

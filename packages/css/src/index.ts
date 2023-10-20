@@ -1,8 +1,10 @@
 import { definePreset } from "@unocss/core";
-import { presetAttributify, presetMini, presetTypography } from "unocss";
-import type { AttributifyOptions } from "unocss/preset-attributify";
-import type { PresetMiniOptions } from "unocss/preset-mini";
-import type { TypographyOptions } from "unocss/preset-typography";
+import {
+  AttributifyOptions,
+  presetAttributify,
+} from "unocss/preset-attributify";
+import { PresetMiniOptions, presetMini } from "unocss/preset-mini";
+import { TypographyOptions, presetTypography } from "unocss/preset-typography";
 
 export type PresetUIKitOptions = {
   base?: PresetMiniOptions;

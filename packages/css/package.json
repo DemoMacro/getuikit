@@ -4,7 +4,8 @@
   "description": "UIKit-style preset for UnoCSS, powered by Demo Macro.",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "unpkg": "dist/index.global.js",
+  "unpkg": "dist/runtime.global.js",
+  "jsdelivr": "dist/runtime.global.js",
   "files": [
     "dist"
   ],
@@ -21,7 +22,7 @@
   "scripts": {
     "prepack": "pnpm build:node && pnpm build:cdn",
     "build:node": "unbuild",
-    "build:cdn": "tsup src/runtime/*.ts  --format iife --minify"
+    "build:cdn": "tsup src/runtime.ts  --format iife --minify"
   },
   "repository": {
     "type": "git",
