@@ -1,16 +1,8 @@
-import { definePreset } from "@unocss/core";
-import {
-  AttributifyOptions,
-  presetAttributify,
-} from "unocss/preset-attributify";
+import { definePreset } from "unocss";
 import { PresetMiniOptions, presetMini } from "unocss/preset-mini";
-import { TypographyOptions, presetTypography } from "unocss/preset-typography";
+import { rules } from "./rules";
 
-export type PresetUIKitOptions = {
-  base?: PresetMiniOptions;
-  attributify?: AttributifyOptions;
-  typography?: TypographyOptions;
-};
+export type PresetUIKitOptions = PresetMiniOptions;
 
 export const presetUIKit = definePreset(
   (
@@ -22,12 +14,9 @@ export const presetUIKit = definePreset(
     },
   ) => {
     return {
+      ...presetMini(options.base),
       name: "@getuikit/css",
-      presets: [
-        presetMini(options.base),
-        presetAttributify(options.attributify),
-        presetTypography(options.typography),
-      ],
+      rules: rules,
     };
   },
 );

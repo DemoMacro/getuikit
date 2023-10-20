@@ -1,18 +1,38 @@
-/* @export-submodules */
-export * from "./animation";
-export * from "./width";
-export * from "./height";
-export * from "./text";
-export * from "./column";
-export * from "./cover";
-export * from "./background";
-export * from "./align";
-export * from "./svg";
-export * from "./utility";
-export * from "./flex";
-export * from "./margin";
-export * from "./padding";
-export * from "./position";
-export * from "./transition";
-export * from "./visibility";
-export * from "./inverse";
+import type { Rule } from "@unocss/core";
+import { align } from "./align";
+import { animation } from "./animation";
+import { background } from "./background";
+import { column } from "./column";
+import { cover } from "./cover";
+import { flex } from "./flex";
+import { height } from "./height";
+import { inverse } from "./inverse";
+import { margin } from "./margin";
+import { padding } from "./padding";
+import { position } from "./position";
+import { svg } from "./svg";
+import { text } from "./text";
+import { transition } from "./transition";
+import { utility } from "./utility";
+import { visibility } from "./visibility";
+import { width } from "./width";
+
+export const rules: Rule[] = [
+  animation,
+  width,
+  height,
+  text,
+  column,
+  cover,
+  background,
+  align,
+  svg,
+  utility,
+  flex,
+  margin,
+  padding,
+  position,
+  transition,
+  visibility,
+  inverse,
+].flat(1);
