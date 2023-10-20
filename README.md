@@ -8,6 +8,7 @@
 ## Packages
 
 - [@getuikit/css](./packages/css/README.md)
+- [@getuikit/icons](./packages/icons/README.md)
 
 ## License
 
