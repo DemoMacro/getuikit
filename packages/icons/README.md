@@ -20,6 +20,18 @@ $ yarn add -D @getuikit/icons
 $ pnpm add -D @getuikit/icons
 ```
 
+## Usage
+
+### CDN
+
+```html
+<!-- Icons CSS -->
+<script src="https://cdn.jsdelivr.net/npm/@getuikit/icons/css/icons.css"></script>
+
+<!-- Icons Content CSS -->
+<script src="https://cdn.jsdelivr.net/npm/@getuikit/icons/css/icons-content.css"></script>
+```
+
 ## License
 
 - [MIT](LICENSE) &copy; [Demo Macro](https://imst.xyz/)

@@ -20,6 +20,38 @@ $ yarn add -D @getuikit/css
 $ pnpm add -D @getuikit/css
 ```
 
+## Usage
+
+### Unocss
+
+```ts
+// uno.config.ts
+import presetUIKit from "@getuikit/css";
+import { defineConfig } from "unocss";
+
+export default defineConfig({
+  presets: [presetUIKit()],
+});
+```
+
+### Unocss with icons
+
+```ts
+// uno.config.ts
+import presetUIKit from "@getuikit/css/icons";
+import { defineConfig } from "unocss";
+
+export default defineConfig({
+  presets: [presetUIKit()],
+});
+```
+
+### CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@getuikit/css/dist/runtime.global.js"></script>
+```
+
 ## License
 
 - [MIT](LICENSE) &copy; [Demo Macro](https://imst.xyz/)

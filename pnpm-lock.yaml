@@ -37,6 +37,9 @@ importers:
       "@getuikit/icons":
         specifier: workspace:*
         version: link:../icons
+      "@unocss/core":
+        specifier: 0.56.5
+        version: 0.56.5
       "@unocss/runtime":
         specifier: 0.56.5
         version: 0.56.5

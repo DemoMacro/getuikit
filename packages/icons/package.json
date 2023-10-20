@@ -24,8 +24,7 @@
     "chars": "./dist/json/chars.json"
   },
   "scripts": {
-    "prepack": "pnpm postinstall && unbuild",
-    "postinstall": "node postinstall.mjs"
+    "prepack": "node postinstall.mjs"
   },
   "repository": {
     "type": "git",

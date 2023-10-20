@@ -1,4 +1,4 @@
-import { rmSync } from "fs";
+import { mkdirSync, rmSync, writeFileSync } from "fs";
 import {
   cleanupSVG,
   exportIconPackage,
@@ -8,6 +8,7 @@ import {
   parseColorsSync,
   runSVGO,
 } from "@iconify/tools";
+import { getIconsCSS, getIconsContentCSS } from "@iconify/utils";
 
 // Import icons
 const iconSet = importDirectorySync("./node_modules/uikit/src/images", {
@@ -54,6 +55,8 @@ iconSet.forEachSync((name, type) => {
   iconSet.fromSVG(name, svg);
 });
 
+const icons = iconSet.export();
+
 // Export
 rmSync("dist", { recursive: true, force: true });
 
@@ -64,7 +67,6 @@ rmSync("dist", { recursive: true, force: true });
   // Export package
   await exportJSONPackage(iconSet, {
     target,
-    module: true,
     cleanup: true,
   });
 })();
@@ -80,3 +82,22 @@ rmSync("dist", { recursive: true, force: true });
     cleanup: true,
   });
 })();
+
+mkdirSync("dist/css", { recursive: true });
+
+// Generate Icons CSS
+const IconsCSS = getIconsCSS(icons, iconSet.list(), {
+  iconSelector: ".{prefix}-icon-{name}",
+});
+
+writeFileSync("dist/css/icons.css", IconsCSS, { encoding: "utf8" });
+
+// GenerateIcons Content CSS
+const IconsContentCSS = getIconsContentCSS(icons, iconSet.list(), {
+  iconSelector: ".{prefix}-icon-{name}::after",
+  height: 16,
+});
+
+writeFileSync("dist/css/icons-content.css", IconsContentCSS, {
+  encoding: "utf8",
+});
