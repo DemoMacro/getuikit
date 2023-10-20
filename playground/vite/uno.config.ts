@@ -1,4 +1,4 @@
-import presetUIKit from "@getuikit/css";
+import presetUIKit from "@getuikit/css/icons";
 import {
   defineConfig,
   transformerDirectives,

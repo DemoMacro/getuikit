@@ -1,5 +1,5 @@
 import initUnocssRuntime from "@unocss/runtime";
-import presetUIKit from ".";
+import presetUIKit from "../icons";
 
 initUnocssRuntime({
   /* options */

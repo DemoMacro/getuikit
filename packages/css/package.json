@@ -4,25 +4,38 @@
   "description": "UIKit-style preset for UnoCSS, powered by Demo Macro.",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "unpkg": "dist/runtime.global.js",
+  "unpkg": "dist/index.global.js",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./icons": {
+      "import": "./dist/icons.mjs",
+      "require": "./dist/icons.cjs"
+    }
+  },
   "scripts": {
     "prepack": "pnpm build:node && pnpm build:cdn",
     "build:node": "unbuild",
-    "build:cdn": "tsup src/runtime.ts  --format iife --minify"
+    "build:cdn": "tsup src/runtime/*.ts  --format iife --minify"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DemoMacro/getuikit.git"
   },
   "keywords": [
+    "getuikit",
     "uikit",
     "preset",
     "unocss",
     "front-end",
-    "ui"
+    "framework",
+    "ui",
+    "vue"
   ],
   "author": {
     "name": "Demo Macro",

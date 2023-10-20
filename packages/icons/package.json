@@ -28,7 +28,14 @@
     "url": "git+https://github.com/DemoMacro/getuikit.git"
   },
   "keywords": [
+    "getuikit",
     "uikit",
+    "preset",
+    "unocss",
+    "front-end",
+    "framework",
+    "ui",
+    "vue",
     "icons"
   ],
   "author": {
