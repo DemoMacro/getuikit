@@ -34,18 +34,6 @@ export default defineConfig({
 });
 ```
 
-### Unocss with icons
-
-```ts
-// uno.config.ts
-import presetUIKit from "@getuikit/css/icons";
-import { defineConfig } from "unocss";
-
-export default defineConfig({
-  presets: [presetUIKit()],
-});
-```
-
 ### CDN
 
 ```html

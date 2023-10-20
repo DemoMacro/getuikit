@@ -13,16 +13,13 @@
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
-    },
-    "./icons": {
-      "import": "./dist/icons.mjs",
-      "require": "./dist/icons.cjs"
     }
   },
   "scripts": {
     "prepack": "pnpm build:node && pnpm build:cdn",
     "build:node": "unbuild",
-    "build:cdn": "tsup src/runtime.ts  --format iife --minify"
+    "build:cdn": "tsup src/runtime.ts  --format iife --minify",
+    "watch": "tsup src/runtime.ts --format iife --watch=src"
   },
   "repository": {
     "type": "git",
@@ -49,7 +46,6 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "dependencies": {
-    "@getuikit/icons": "workspace:*",
     "@unocss/core": "0.56.5",
     "@unocss/runtime": "0.56.5",
     "unocss": "0.56.5"
