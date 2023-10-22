@@ -2,7 +2,7 @@
   "name": "@getuikit/nuxt",
   "version": "0.0.0",
   "description": "Nuxt module for getuikit, powered by Demo Macro.",
-  "main": "./dist/module.cjs",
+  "main": "./dist/module.mjs",
   "types": "./dist/types.d.ts",
   "exports": {
     ".": {
@@ -46,6 +46,7 @@
   },
   "homepage": "https://github.com/DemoMacro/nuxt-starter-module#readme",
   "dependencies": {
+    "@getuikit/vue": "workspace:*",
     "@nuxt/kit": "3.7.4"
   },
   "devDependencies": {

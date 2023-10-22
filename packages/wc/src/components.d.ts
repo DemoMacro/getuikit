@@ -7,14 +7,14 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {}
 declare global {
-  type HTMLElementTagNameMap = {};
+  interface HTMLElementTagNameMap {}
 }
 declare namespace LocalJSX {
-  type IntrinsicElements = {};
+  interface IntrinsicElements {}
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
-    type IntrinsicElements = {};
+    interface IntrinsicElements {}
   }
 }

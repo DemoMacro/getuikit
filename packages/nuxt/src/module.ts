@@ -9,15 +9,15 @@ export default defineNuxtModule<ModuleOptions>({
     name: "@getuikit/nuxt",
     configKey: "getuikit",
   },
-  defaults: {
-    addPlugin: true,
-  },
+  defaults: {},
   setup(options, nuxt) {
-    if (options.addPlugin) {
-      // Create resolver to resolve relative paths
-      const { resolve } = createResolver(import.meta.url);
+    nuxt.options.build.transpile.push("@getuikit/vue");
+    nuxt.options.vue.compilerOptions.isCustomElement = (tag: string) =>
+      tag.includes("-");
 
-      addPlugin(resolve("./runtime/plugin"));
-    }
+    const resolver = createResolver(import.meta.url);
+
+    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
+    addPlugin(resolver.resolve("./runtime/plugin"));
   },
 });

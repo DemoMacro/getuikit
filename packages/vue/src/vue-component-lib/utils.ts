@@ -94,7 +94,7 @@ export const defineContainer = <Props, VModelType = string | number | boolean>(
             ? modelUpdateEvent
             : [modelUpdateEvent];
           eventsNames.forEach((eventName: string) => {
-            vnode.el?.addEventListener(eventName.toLowerCase(), (e: Event) => {
+            vnode.el!.addEventListener(eventName.toLowerCase(), (e: Event) => {
               modelPropValue = (e?.target as any)[modelProp];
               emit(UPDATE_VALUE_EVENT, modelPropValue);
 
@@ -124,7 +124,7 @@ export const defineContainer = <Props, VModelType = string | number | boolean>(
         if (routerLink === EMPTY_PROP) return;
 
         if (navManager !== undefined) {
-          const navigationPayload: any = { event: ev };
+          let navigationPayload: any = { event: ev };
           for (const key in props) {
             const value = props[key];
             if (
@@ -204,7 +204,7 @@ export const defineContainer = <Props, VModelType = string | number | boolean>(
           }
         }
 
-        return h(name, propsToAdd, slots.default?.());
+        return h(name, propsToAdd, slots.default && slots.default());
       };
     },
   );
