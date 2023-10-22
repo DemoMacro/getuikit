@@ -1,25 +1,16 @@
 {
-  "name": "@getuikit/css",
+  "name": "@getuikit/vue",
   "version": "0.0.0",
-  "description": "UIKit-style preset for UnoCSS, powered by Demo Macro.",
+  "description": "Vue components for getuikit, powered by Demo Macro.",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "unpkg": "dist/runtime.global.js",
-  "jsdelivr": "dist/runtime.global.js",
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
-  },
   "scripts": {
-    "prepack": "pnpm build:node && pnpm build:cdn",
-    "build:node": "unbuild",
-    "build:cdn": "tsup src/runtime.ts  --format iife --minify",
-    "watch": "tsup src/runtime.ts --format iife --watch=src"
+    "prepack": "unbuild",
+    "dev": "unbuild --stub",
+    "postinstall": "pnpm prepack"
   },
   "repository": {
     "type": "git",
@@ -45,9 +36,8 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
-  "dependencies": {
-    "@unocss/core": "0.56.5",
-    "@unocss/preset-mini": "0.56.5",
-    "@unocss/runtime": "0.56.5"
+  "devDependencies": {
+    "@getuikit/wc": "workspace:*",
+    "vue": "3.3.4"
   }
 }

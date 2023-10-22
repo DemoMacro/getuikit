@@ -2,11 +2,6 @@ import { defineNuxtConfig } from "nuxt/config";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: true,
-  sourcemap: false,
-  experimental: {
-    payloadExtraction: true,
-  },
   typescript: {
     tsConfig: {
       compilerOptions: {
@@ -14,14 +9,8 @@ export default defineNuxtConfig({
       },
     },
   },
-  nitro: {
-    future: {
-      nativeSWR: true,
-    },
-    compressPublicAssets: {
-      gzip: true,
-      brotli: true,
-    },
+  modules: ["@nuxt/content", "@getuikit/nuxt"],
+  content: {
+    documentDriven: true,
   },
-  extends: ["@getuikit/nuxt-theme"],
 });

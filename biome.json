@@ -3,6 +3,13 @@
   "files": {
     "ignore": ["*/dist/*", "*/.output/*", "*/.nuxt/*"]
   },
+  "linter": {
+    "ignore": [
+      "*/src/components.d.ts",
+      "*/vue-component-lib/*",
+      "*/types/**/*.d.ts"
+    ]
+  },
   "formatter": {
     "indentStyle": "space"
   },

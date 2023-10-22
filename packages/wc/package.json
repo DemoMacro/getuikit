@@ -1,0 +1,56 @@
+{
+  "name": "@getuikit/wc",
+  "version": "0.0.0",
+  "description": "Web components for getuikit, powered by Demo Macro.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/web-components/web-components.esm.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prepack": "stencil build",
+    "dev": "stencil build --watch",
+    "generate": "stencil generate",
+    "postinstall": "pnpm prepack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "getuikit",
+    "uikit",
+    "preset",
+    "unocss",
+    "front-end",
+    "framework",
+    "ui",
+    "stencil",
+    "web-components"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "devDependencies": {
+    "@getuikit/css": "workspace:^",
+    "@stencil-community/postcss": "2.2.0",
+    "@stencil/vue-output-target": "0.8.6",
+    "@unocss/postcss": "0.56.5"
+  },
+  "dependencies": {
+    "@stencil/core": "4.3.0"
+  }
+}

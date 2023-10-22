@@ -1,0 +1,45 @@
+{
+  "name": "@getuikit/nuxt-theme",
+  "version": "0.0.0",
+  "description": "UIKit-style nuxt theme, powered by Demo Macro.",
+  "main": "nuxt.config.ts",
+  "files": [
+    "app.vue",
+    "nuxt.config.ts"
+  ],
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
+  },
+  "keywords": [
+    "getuikit",
+    "uikit",
+    "preset",
+    "unocss",
+    "front-end",
+    "framework",
+    "ui",
+    "vue",
+    "nuxt"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/getuikit/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "dependencies": {
+    "@getuikit/nuxt": "workspace:*",
+    "@nuxt/content": "2.8.5"
+  }
+}

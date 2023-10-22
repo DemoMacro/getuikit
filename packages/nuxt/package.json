@@ -1,0 +1,54 @@
+{
+  "name": "@getuikit/nuxt",
+  "version": "0.0.0",
+  "description": "Nuxt module for getuikit, powered by Demo Macro.",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "dev": "nuxt-module-build build --stub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/nuxt-starter-module.git"
+  },
+  "keywords": [
+    "getuikit",
+    "uikit",
+    "preset",
+    "unocss",
+    "front-end",
+    "framework",
+    "ui",
+    "vue",
+    "nuxt",
+    "nuxt3",
+    "vue3",
+    "module"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/nuxt-starter-module/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/nuxt-starter-module#readme",
+  "dependencies": {
+    "@nuxt/kit": "3.7.4"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "0.5.2"
+  }
+}
