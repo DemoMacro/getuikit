@@ -9,6 +9,10 @@
 
 - [@getuikit/css](./packages/css/README.md)
 - [@getuikit/icons](./packages/icons/README.md)
+- [@getuikit/nuxt](./packages/nuxt/README.md)
+- [@getuikit/nuxt-theme](./packages/nuxt-theme/README.md)
+- [@getuikit/vue](./packages/vue/README.md)
+- [@getuikit/wc](./packages/wc/README.md)
 
 ## License
 
