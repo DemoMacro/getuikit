@@ -1,4 +1,5 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 import { breadcrumb } from "./breadcrumb";
 import { dotnav } from "./dotnav";
 import { dropdown } from "./dropdown";
@@ -12,7 +13,7 @@ import { subnav } from "./subnav";
 import { tab } from "./tab";
 import { thumbnav } from "./thumbnav";
 
-export const navsRules: Rule[] = [
+export const navsRules: Rule<Theme>[] = [
   nav,
   navbar,
   subnav,

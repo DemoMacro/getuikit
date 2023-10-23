@@ -1,3 +1,4 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 
-export const slidenav: Rule[] = [];
+export const slidenav: Rule<Theme>[] = [];

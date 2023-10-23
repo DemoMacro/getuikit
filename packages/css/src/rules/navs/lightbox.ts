@@ -1,3 +1,4 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 
-export const lightbox: Rule[] = [];
+export const lightbox: Rule<Theme>[] = [];

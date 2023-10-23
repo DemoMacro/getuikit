@@ -1,4 +1,5 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 import { alert } from "./alert";
 import { article } from "./article";
 import { badge } from "./badge";
@@ -12,7 +13,7 @@ import { search } from "./search";
 import { spinner } from "./spinner";
 import { totop } from "./totop";
 
-export const commonRules: Rule[] = [
+export const commonRules: Rule<Theme>[] = [
   close,
   spinner,
   totop,

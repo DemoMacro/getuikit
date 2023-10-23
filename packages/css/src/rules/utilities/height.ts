@@ -1,3 +1,4 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 
-export const height: Rule[] = [];
+export const height: Rule<Theme>[] = [];

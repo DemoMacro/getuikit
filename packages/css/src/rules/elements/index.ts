@@ -1,4 +1,5 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 import { button } from "./button";
 import { descriptionList } from "./description-list";
 import { divider } from "./divider";
@@ -11,7 +12,7 @@ import { list } from "./list";
 import { progress } from "./progress";
 import { table } from "./table";
 
-export const elementsRules: Rule[] = [
+export const elementsRules: Rule<Theme>[] = [
   link,
   heading,
   divider,

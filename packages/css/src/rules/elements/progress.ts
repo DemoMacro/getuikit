@@ -1,3 +1,4 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 
-export const progress: Rule[] = [];
+export const progress: Rule<Theme>[] = [];

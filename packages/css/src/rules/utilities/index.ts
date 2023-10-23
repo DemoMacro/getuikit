@@ -1,4 +1,5 @@
 import type { Rule } from "@unocss/core";
+import type { Theme } from "@unocss/preset-mini";
 import { align } from "./align";
 import { animation } from "./animation";
 import { background } from "./background";
@@ -17,7 +18,7 @@ import { utility } from "./utility";
 import { visibility } from "./visibility";
 import { width } from "./width";
 
-export const utilityRules: Rule[] = [
+export const utilityRules: Rule<Theme>[] = [
   animation,
   width,
   height,
