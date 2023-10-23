@@ -9,7 +9,6 @@ export default defineNuxtModule<ModuleOptions>({
     name: "@getuikit/nuxt",
     configKey: "getuikit",
   },
-  defaults: {},
   setup(options, nuxt) {
     nuxt.options.build.transpile.push("@getuikit/vue");
     nuxt.options.vue.compilerOptions.isCustomElement = (tag: string) =>

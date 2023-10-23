@@ -7,6 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@getuikit/nuxt": "workspace:*",
     "@getuikit/nuxt-theme": "workspace:*",
     "nuxt": "3.7.4"
   }

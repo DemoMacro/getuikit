@@ -23,5 +23,6 @@ export default defineNuxtConfig({
       brotli: true,
     },
   },
+  modules: ["@getuikit/nuxt"],
   extends: ["@getuikit/nuxt-theme"],
 });

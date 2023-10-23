@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DemoMacro/nuxt-starter-module.git"
+    "url": "git+https://github.com/DemoMacro/getuikit.git"
   },
   "keywords": [
     "getuikit",
@@ -42,9 +42,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DemoMacro/nuxt-starter-module/issues"
+    "url": "https://github.com/DemoMacro/getuikit/issues"
   },
-  "homepage": "https://github.com/DemoMacro/nuxt-starter-module#readme",
+  "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "dependencies": {
     "@getuikit/vue": "workspace:*",
     "@nuxt/kit": "3.7.4"
