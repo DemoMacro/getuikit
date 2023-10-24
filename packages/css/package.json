@@ -19,7 +19,7 @@
     "prepack": "pnpm build:node && pnpm build:cdn",
     "build:node": "unbuild",
     "build:cdn": "tsup src/runtime.ts  --format iife --minify",
-    "watch": "tsup src/runtime.ts --format iife --watch=src"
+    "dev": "unbuild --stub && tsup src/runtime.ts --format iife --watch=src"
   },
   "repository": {
     "type": "git",

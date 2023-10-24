@@ -8,4 +8,17 @@ export const width: Rule<Theme>[] = [
       width: `${(Number(n) / Number(d)) * 100}%`,
     }),
   ],
+  [
+    /^(w|width)-auto$/,
+    () => ({
+      width: "auto",
+    }),
+  ],
+  [
+    /^(w|width)-expend$/,
+    () => ({
+      flex: 1,
+      minWidth: "1px",
+    }),
+  ],
 ];
