@@ -16,8 +16,7 @@
   "scripts": {
     "prepack": "stencil build",
     "dev": "stencil build --watch",
-    "generate": "stencil generate",
-    "postinstall": "pnpm prepack"
+    "generate": "stencil generate"
   },
   "repository": {
     "type": "git",

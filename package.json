@@ -7,7 +7,7 @@
     "build": "pnpm -r prepack",
     "check": "biome check . --apply-unsafe && biome format . --write",
     "format": "prettier --write --list-different . --ignore-path .gitignore",
-    "postinstall": "githooks install"
+    "postinstall": "githooks install && pnpm build"
   },
   "repository": {
     "type": "git",

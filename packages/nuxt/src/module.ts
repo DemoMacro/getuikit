@@ -1,7 +1,15 @@
-import { addPlugin, createResolver, defineNuxtModule } from "@nuxt/kit";
+import presetUIKit from "@getuikit/css";
+import {
+  addPlugin,
+  createResolver,
+  defineNuxtModule,
+  installModule,
+} from "@nuxt/kit";
+import type { UnocssNuxtOptions } from "@unocss/nuxt";
 
 export interface ModuleOptions {
-  addPlugin: boolean;
+  components: boolean;
+  unocss: UnocssNuxtOptions;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -9,14 +17,24 @@ export default defineNuxtModule<ModuleOptions>({
     name: "@getuikit/nuxt",
     configKey: "getuikit",
   },
-  setup(options, nuxt) {
-    nuxt.options.build.transpile.push("@getuikit/vue");
-    nuxt.options.vue.compilerOptions.isCustomElement = (tag: string) =>
-      tag.includes("-");
+  defaults: {
+    components: true,
+    unocss: {
+      presets: [presetUIKit],
+    },
+  },
+  async setup(options, nuxt) {
+    if (options.components) {
+      nuxt.options.build.transpile.push("@getuikit/vue");
+      nuxt.options.vue.compilerOptions.isCustomElement = (tag: string) =>
+        tag.includes("-");
 
-    const resolver = createResolver(import.meta.url);
+      const resolver = createResolver(import.meta.url);
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve("./runtime/plugin"));
+      // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
+      addPlugin(resolver.resolve("./runtime/plugin"));
+    }
+
+    await installModule("@unocss/nuxt", options.unocss);
   },
 });

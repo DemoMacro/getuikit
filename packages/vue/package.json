@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "prepack": "unbuild",
-    "dev": "unbuild --stub",
-    "postinstall": "pnpm prepack"
+    "dev": "unbuild --stub"
   },
   "repository": {
     "type": "git",
