@@ -4,7 +4,7 @@ import { vueOutputTarget } from "@stencil/vue-output-target";
 import unocss from "@unocss/postcss";
 
 export const config: Config = {
-  namespace: "web-components",
+  namespace: "getuikit",
   plugins: [
     postcss({
       plugins: [unocss()],

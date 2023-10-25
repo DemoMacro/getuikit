@@ -16,12 +16,10 @@
   <head>
     <script
       type="module"
-      src="https://cdn.jsdelivr.net/npm/@getuikit/wc/dist/web-components/web-components.esm.js"
+      src="https://cdn.jsdelivr.net/npm/@getuikit/wc/dist/getuikit/getuikit.esm.js"
     ></script>
   </head>
-  <body>
-    <tdt-map tk=""></tdt-map>
-  </body>
+  <body></body>
 </html>
 ```
 

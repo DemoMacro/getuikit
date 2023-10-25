@@ -42,8 +42,5 @@
   "dependencies": {
     "@getuikit/nuxt": "workspace:*",
     "@nuxt/content": "2.8.5"
-  },
-  "devDependencies": {
-    "@unocss/nuxt": "0.57.1"
   }
 }
