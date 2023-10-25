@@ -47,6 +47,7 @@
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "dependencies": {
     "@getuikit/css": "workspace:*",
+    "@getuikit/icons": "workspace:*",
     "@getuikit/vue": "workspace:*",
     "@nuxt/kit": "3.7.4",
     "@unocss/nuxt": "0.57.1"

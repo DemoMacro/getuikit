@@ -2,13 +2,17 @@
   "name": "@getuikit/icons",
   "version": "0.0.0",
   "description": "UIKit-style icons with iconify, powered by Demo Macro.",
-  "main": "dist/json/index.mjs",
-  "types": "dist/json/index.d.ts",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./json": {
       "import": "./dist/json/index.mjs",
       "require": "./dist/json/index.js"
     },
@@ -24,7 +28,7 @@
     "chars": "./dist/json/chars.json"
   },
   "scripts": {
-    "prepack": "node postinstall.mjs"
+    "prepack": "node postinstall.mjs && unbuild"
   },
   "repository": {
     "type": "git",

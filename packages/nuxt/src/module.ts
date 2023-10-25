@@ -1,4 +1,5 @@
 import presetUIKit from "@getuikit/css";
+import { icons } from "@getuikit/icons";
 import {
   addPlugin,
   createResolver,
@@ -21,6 +22,13 @@ export default defineNuxtModule<ModuleOptions>({
     components: true,
     unocss: {
       presets: [presetUIKit],
+      icons: {
+        collections: {
+          uk: async () => {
+            return icons;
+          },
+        },
+      },
     },
   },
   async setup(options, nuxt) {

@@ -74,6 +74,9 @@ importers:
       "@getuikit/css":
         specifier: workspace:*
         version: link:../css
+      "@getuikit/icons":
+        specifier: workspace:^
+        version: link:../icons
       "@getuikit/vue":
         specifier: workspace:*
         version: link:../vue
