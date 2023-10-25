@@ -43,13 +43,13 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "dependencies": {
+    "@stencil/core": "4.6.0"
+  },
   "devDependencies": {
     "@getuikit/css": "workspace:^",
     "@stencil-community/postcss": "2.2.0",
     "@stencil/vue-output-target": "0.8.6",
-    "@unocss/postcss": "0.56.5"
-  },
-  "dependencies": {
-    "@stencil/core": "4.3.0"
+    "@unocss/postcss": "0.57.1"
   }
 }

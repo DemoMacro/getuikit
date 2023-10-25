@@ -49,7 +49,7 @@
     "@getuikit/css": "workspace:*",
     "@getuikit/icons": "workspace:*",
     "@getuikit/vue": "workspace:*",
-    "@nuxt/kit": "3.7.4",
+    "@nuxt/kit": "3.8.0",
     "@unocss/nuxt": "0.57.1"
   },
   "devDependencies": {
