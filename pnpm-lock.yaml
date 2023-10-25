@@ -75,7 +75,7 @@ importers:
         specifier: workspace:*
         version: link:../css
       "@getuikit/icons":
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../icons
       "@getuikit/vue":
         specifier: workspace:*
@@ -105,10 +105,11 @@ importers:
         version: 0.57.1(postcss@8.4.31)(rollup@3.29.4)(vite@4.4.11)(webpack@5.89.0)
 
   packages/vue:
-    devDependencies:
+    dependencies:
       "@getuikit/wc":
         specifier: workspace:*
         version: link:../wc
+    devDependencies:
       vue:
         specifier: 3.3.4
         version: 3.3.4

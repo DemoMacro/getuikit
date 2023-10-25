@@ -10,13 +10,13 @@
 
 ```bash
 # npm
-$ npm install -D @getuikit/wc @getuikit/vue
+$ npm install -D @getuikit/vue
 
 # yarn
-$ yarn add -D @getuikit/wc @getuikit/vue
+$ yarn add -D @getuikit/vue
 
 # pnpm
-$ pnpm add -D @getuikit/wc @getuikit/vue
+$ pnpm add -D @getuikit/vue
 ```
 
 ## License

@@ -35,8 +35,10 @@
     "url": "https://github.com/DemoMacro/getuikit/issues"
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
+  "dependencies": {
+    "@getuikit/wc": "workspace:*"
+  },
   "devDependencies": {
-    "@getuikit/wc": "workspace:*",
     "vue": "3.3.4"
   }
 }
