@@ -11,7 +11,7 @@
     "@unocss/reset": "0.56.5",
     "typescript": "5.2.2",
     "unocss": "0.56.5",
-    "vite": "4.4.11",
+    "vite": "4.5.0",
     "vite-plugin-pages": "0.31.0"
   }
 }
