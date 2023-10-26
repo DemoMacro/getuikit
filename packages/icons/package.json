@@ -60,6 +60,6 @@
   },
   "devDependencies": {
     "@iconify/tools": "3.0.5",
-    "uikit": "3.17.5"
+    "uikit": "3.17.6"
   }
 }
