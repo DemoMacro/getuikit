@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/web-components/web-components.esm.js",
+  "unpkg": "dist/getuikit/getuikit.esm.js",
   "files": [
     "dist/"
   ],

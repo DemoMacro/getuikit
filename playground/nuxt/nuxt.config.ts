@@ -22,6 +22,7 @@ export default defineNuxtConfig({
       gzip: true,
       brotli: true,
     },
+    routeRules: {},
   },
   extends: ["@getuikit/nuxt-theme"],
 });

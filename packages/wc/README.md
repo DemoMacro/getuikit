@@ -12,15 +12,10 @@
 ### CDN
 
 ```html
-<html>
-  <head>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@getuikit/wc/dist/getuikit/getuikit.esm.js"
-    ></script>
-  </head>
-  <body></body>
-</html>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@getuikit/wc/dist/getuikit/getuikit.esm.js"
+></script>
 ```
 
 ### NPM
