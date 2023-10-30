@@ -20,8 +20,15 @@ export namespace Components {
   interface UkSortable {}
   interface UkSticky {}
   interface UkSwitcher {}
-  interface UkTab {}
-  interface UkTabItem {}
+  interface UkTab {
+    active: number;
+    disabled: boolean | number;
+  }
+  interface UkTabItem {
+    active: boolean;
+    disabled: boolean;
+    header: string;
+  }
   interface UkTooltip {}
 }
 declare global {
@@ -173,8 +180,15 @@ declare namespace LocalJSX {
   interface UkSortable {}
   interface UkSticky {}
   interface UkSwitcher {}
-  interface UkTab {}
-  interface UkTabItem {}
+  interface UkTab {
+    active?: number;
+    disabled?: boolean | number;
+  }
+  interface UkTabItem {
+    active?: boolean;
+    disabled?: boolean;
+    header?: string;
+  }
   interface UkTooltip {}
   interface IntrinsicElements {
     "uk-accordion": UkAccordion;

@@ -10,8 +10,5 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/content", "@getuikit/nuxt"],
-  content: {
-    documentDriven: true,
-  },
   getuikit: {},
 });

@@ -78,11 +78,13 @@ export const UkSwitcher = /*@__PURE__*/ defineContainer<JSX.UkSwitcher>(
 export const UkTab = /*@__PURE__*/ defineContainer<JSX.UkTab>(
   "uk-tab",
   undefined,
+  ["active", "disabled"],
 );
 
 export const UkTabItem = /*@__PURE__*/ defineContainer<JSX.UkTabItem>(
   "uk-tab-item",
   undefined,
+  ["header", "active", "disabled"],
 );
 
 export const UkTooltip = /*@__PURE__*/ defineContainer<JSX.UkTooltip>(
