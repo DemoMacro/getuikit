@@ -6,6 +6,7 @@ import { background } from "./background";
 import { column } from "./column";
 import { cover } from "./cover";
 import { flex } from "./flex";
+import { grid } from "./grid";
 import { height } from "./height";
 import { inverse } from "./inverse";
 import { margin } from "./margin";
@@ -30,6 +31,7 @@ export const utilityRules: Rule<Theme>[] = [
   svg,
   utility,
   flex,
+  grid,
   margin,
   padding,
   position,
