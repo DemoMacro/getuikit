@@ -1,14 +1,26 @@
-import { Component, Element, Host, Prop, h } from "@stencil/core";
+import { Component, Element, Host, Listen, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "uk-tab",
-  shadow: true,
+  styleUrl: "uk-tab.scss",
+  scoped: true,
 })
 export class UkTab {
-  @Prop({ reflect: true }) active = 0;
-  @Prop({ reflect: true }) disabled: boolean | number = false;
+  @Prop({ reflect: true, mutable: true }) active = 0;
+  @Prop({ reflect: true }) name = "";
 
   @Element() el!: HTMLElement;
+
+  @Listen("click", {})
+  onClick(e: MouseEvent) {
+    const target = e.target as HTMLUkTabItemElement;
+
+    if (target.tagName === "UK-TAB-ITEM" && !target.disabled) {
+      const items = this.el.querySelectorAll("uk-tab-item");
+
+      this.active = Array.from(items).indexOf(target);
+    }
+  }
 
   componentWillRender() {
     const items = this.el.querySelectorAll("uk-tab-item");
@@ -21,22 +33,13 @@ export class UkTab {
       }
     }
 
-    if (this.disabled) {
-      const items = this.el.querySelectorAll("uk-tab-item");
+    // Update switcher
+    const switcher = document.querySelector(
+      `uk-switcher[connect="${this.name}"]`,
+    ) as HTMLUkSwitcherElement;
 
-      if (this.disabled === true) {
-        for (let i = 0; i < items.length; i++) {
-          items[i].setAttribute("disabled", "");
-        }
-      } else if (typeof this.disabled === "number") {
-        for (let i = 0; i < items.length; i++) {
-          if (i === this.disabled) {
-            items[i].setAttribute("disabled", "");
-          } else {
-            items[i].removeAttribute("disabled");
-          }
-        }
-      }
+    if (switcher) {
+      switcher.active = this.active;
     }
   }
 

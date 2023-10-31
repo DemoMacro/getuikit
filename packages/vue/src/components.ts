@@ -73,18 +73,25 @@ export const UkSticky = /*@__PURE__*/ defineContainer<JSX.UkSticky>(
 export const UkSwitcher = /*@__PURE__*/ defineContainer<JSX.UkSwitcher>(
   "uk-switcher",
   undefined,
+  ["active", "connect"],
+);
+
+export const UkSwitcherItem = /*@__PURE__*/ defineContainer<JSX.UkSwitcherItem>(
+  "uk-switcher-item",
+  undefined,
+  ["active", "disabled"],
 );
 
 export const UkTab = /*@__PURE__*/ defineContainer<JSX.UkTab>(
   "uk-tab",
   undefined,
-  ["active", "disabled"],
+  ["active", "name"],
 );
 
 export const UkTabItem = /*@__PURE__*/ defineContainer<JSX.UkTabItem>(
   "uk-tab-item",
   undefined,
-  ["header", "active", "disabled"],
+  ["active", "disabled"],
 );
 
 export const UkTooltip = /*@__PURE__*/ defineContainer<JSX.UkTooltip>(

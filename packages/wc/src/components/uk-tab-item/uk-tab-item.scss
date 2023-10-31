@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  align-items: center;
+
+  column-gap: 0.25em;
+
+  justify-content: center;
+
+  padding: 5px 10px;
+  color: #999;
+  border-bottom: 1px solid transparent;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+
+  z-index: 1;
+
+  &:hover {
+    color: #666;
+  }
+
+  &[active] {
+    color: #333;
+    border-color: #1e87f0;
+  }
+
+  &[disabled] {
+    color: #999;
+    cursor: default;
+  }
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+}
