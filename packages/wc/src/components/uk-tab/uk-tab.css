@@ -1,0 +1,29 @@
+.uk-tab {
+  @apply uk-flex uk-flex-wrap uk-relative before:uk-absolute before:uk-content-empty;
+}
+
+.uk-tab-top {
+  @apply before:uk-position-bottom-none before:uk-position-left-none before:uk-position-right-none before:uk-border-b-1 before:uk-border-b-solid before:uk-border-b-light-900 children:uk-border-b-solid children:uk-justify-center;
+}
+
+.uk-tab-bottom {
+  @apply before:uk-position-top-none before:uk-position-left-none before:uk-position-right-none before:uk-border-t-1 before:uk-border-t-solid before:uk-border-t-light-900 children:uk-border-t-solid children:uk-justify-center;
+}
+
+/*
+ * Left + Right
+ * 1. Reset Gutter
+ */
+
+.uk-tab-left,
+.uk-tab-right {
+  @apply uk-flex-col children:uk-justify-left;
+}
+
+.uk-tab-left {
+  @apply before:uk-position-top-none before:uk-position-bottom-none before:uk-position-left-none before:uk-border-l-1 before:uk-border-l-solid before:uk-border-l-light-900 children:uk-border-l-solid;
+}
+
+.uk-tab-right {
+  @apply before:uk-position-top-none before:uk-position-bottom-none before:uk-position-right-none before:uk-border-r-1 before:uk-border-r-solid before:uk-border-r-light-900 children:uk-border-r-solid;
+}

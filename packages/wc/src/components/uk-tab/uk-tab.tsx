@@ -2,12 +2,12 @@ import { Component, Element, Host, Listen, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "uk-tab",
-  styleUrl: "uk-tab.scss",
-  scoped: true,
+  styleUrl: "uk-tab.css",
 })
 export class UkTab {
   @Prop({ reflect: true, mutable: true }) active = 0;
   @Prop({ reflect: true }) name = "";
+  @Prop({ reflect: true }) variant: "top" | "bottom" | "left" | "right" = "top";
 
   @Element() el!: HTMLElement;
 
@@ -45,7 +45,7 @@ export class UkTab {
 
   render() {
     return (
-      <Host>
+      <Host class={`uk-tab uk-tab-${this.variant}`}>
         <slot />
       </Host>
     );

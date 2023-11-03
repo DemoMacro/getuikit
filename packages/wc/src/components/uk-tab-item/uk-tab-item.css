@@ -1,0 +1,15 @@
+.uk-tab-item {
+  @apply uk-flex uk-flex-items-center uk-case-upper uk-transition uk-p-xs uk-border-transparent uk-z-1 uk-text-3 uk-text-dark-50 hover:uk-text-dark-400 uk-border-1;
+}
+
+.uk-tab-item[active] {
+  @apply uk-border-blue-900 uk-text-blue-900;
+}
+
+.uk-tab-item[disabled] {
+  @apply uk-text-dark-50 uk-cursor-default;
+}
+
+.uk-tab-item:not([disabled]) {
+  @apply uk-cursor-pointer;
+}

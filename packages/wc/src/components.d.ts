@@ -43,6 +43,7 @@ export namespace Components {
     interface UkTab {
         "active": number;
         "name": string;
+        "variant": "top" | "bottom" | "left" | "right";
     }
     interface UkTabItem {
         "active": boolean;
@@ -219,6 +220,7 @@ declare namespace LocalJSX {
     interface UkTab {
         "active"?: number;
         "name"?: string;
+        "variant"?: "top" | "bottom" | "left" | "right";
     }
     interface UkTabItem {
         "active"?: boolean;

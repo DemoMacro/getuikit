@@ -2,8 +2,7 @@ import { Component, Host, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "uk-tab-item",
-  styleUrl: "uk-tab-item.scss",
-  scoped: true,
+  styleUrl: "uk-tab-item.css",
 })
 export class UkTabItem {
   @Prop({ reflect: true }) active = false;
@@ -17,7 +16,7 @@ export class UkTabItem {
 
   render() {
     return (
-      <Host>
+      <Host class="uk-tab-item">
         <slot />
       </Host>
     );

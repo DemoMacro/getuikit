@@ -85,7 +85,7 @@ export const UkSwitcherItem = /*@__PURE__*/ defineContainer<JSX.UkSwitcherItem>(
 export const UkTab = /*@__PURE__*/ defineContainer<JSX.UkTab>(
   "uk-tab",
   undefined,
-  ["active", "name"],
+  ["active", "name", "variant"],
 );
 
 export const UkTabItem = /*@__PURE__*/ defineContainer<JSX.UkTabItem>(

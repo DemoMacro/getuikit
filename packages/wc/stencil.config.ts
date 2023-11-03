@@ -1,14 +1,12 @@
 import { postcss } from "@stencil-community/postcss";
 import { Config } from "@stencil/core";
-import { sass } from "@stencil/sass";
 import { vueOutputTarget } from "@stencil/vue-output-target";
 import unocss from "@unocss/postcss";
 
 export const config: Config = {
   namespace: "getuikit",
-  globalStyle: "src/global/global.scss",
+  globalStyle: "src/global/global.css",
   plugins: [
-    sass(),
     postcss({
       plugins: [unocss()],
     }),
