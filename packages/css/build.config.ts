@@ -5,6 +5,9 @@ export default defineBuildConfig({
   entries: ["src/index"],
   rollup: {
     emitCJS: true,
+    esbuild: {
+      minify: true,
+    },
     output: {
       exports: "named",
     },
