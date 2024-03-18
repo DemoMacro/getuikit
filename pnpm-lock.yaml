@@ -102,18 +102,18 @@ importers:
   packages/wc:
     dependencies:
       '@stencil/core':
-        specifier: 4.6.0
-        version: 4.6.0
+        specifier: 4.13.0
+        version: 4.13.0
     devDependencies:
       '@getuikit/css':
         specifier: workspace:*
         version: link:../css
       '@stencil-community/postcss':
         specifier: 2.2.0
-        version: 2.2.0(@stencil/core@4.6.0)
+        version: 2.2.0(@stencil/core@4.13.0)
       '@stencil/vue-output-target':
         specifier: 0.8.6
-        version: 0.8.6(@stencil/core@4.6.0)
+        version: 0.8.6(@stencil/core@4.13.0)
       '@unocss/postcss':
         specifier: 0.57.1
         version: 0.57.1(postcss@8.4.31)
@@ -1864,26 +1864,26 @@ packages:
     resolution: {integrity: sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==}
     dev: false
 
-  /@stencil-community/postcss@2.2.0(@stencil/core@4.6.0):
+  /@stencil-community/postcss@2.2.0(@stencil/core@4.13.0):
     resolution: {integrity: sha512-PuPdjqgF6HdvSLwS6fpLf1TRzd3bd6zqpsICCUA0u9sxPnwrsIpx1xYyA/K9hSWrmyUg0WhHPvkX9k26N5DCnw==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3.0.0 || >=4.0.0'
     dependencies:
-      '@stencil/core': 4.6.0
+      '@stencil/core': 4.13.0
       postcss: 8.4.31
     dev: true
 
-  /@stencil/core@4.6.0:
-    resolution: {integrity: sha512-5Y6/fP28aspPDRB+Tz5GuB1jRVGuUEk5/rnyE8ACGcuzEOG+zR0A/IHRJSU3XmCxUlVDKfKoO6St5W84oUCVMA==}
+  /@stencil/core@4.13.0:
+    resolution: {integrity: sha512-gg+gtBWekQ08mDja8GVAUHNu+rrFhQaKZDvfhnS3l/5JbYiJddTimuDPPhuc0sR0JZL1iRdJTJSa+JbvmnQ1cQ==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
-  /@stencil/vue-output-target@0.8.6(@stencil/core@4.6.0):
+  /@stencil/vue-output-target@0.8.6(@stencil/core@4.13.0):
     resolution: {integrity: sha512-B1gQW8FWeU7x/KBPm9R28jYFGN5NsZTZR4jwfDMhKBmU1Q2dIxFY52ARhbrfj5tJQxKoxr2tQJD2S14r9t1v7w==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 4.6.0
+      '@stencil/core': 4.13.0
     dev: true
 
   /@tootallnate/once@2.0.0:
