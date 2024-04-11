@@ -59,7 +59,7 @@
     "@iconify/types": "*"
   },
   "devDependencies": {
-    "@iconify/tools": "3.0.7",
+    "@iconify/tools": "4.0.4",
     "uikit": "3.17.6"
   }
 }
