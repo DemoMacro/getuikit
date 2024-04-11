@@ -49,7 +49,7 @@
   "devDependencies": {
     "@getuikit/css": "workspace:*",
     "@stencil-community/postcss": "2.2.0",
-    "@stencil/vue-output-target": "0.8.6",
+    "@stencil/vue-output-target": "0.8.8",
     "@unocss/postcss": "0.57.1"
   }
 }

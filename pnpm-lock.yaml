@@ -112,8 +112,8 @@ importers:
         specifier: 2.2.0
         version: 2.2.0(@stencil/core@4.6.0)
       '@stencil/vue-output-target':
-        specifier: 0.8.6
-        version: 0.8.6(@stencil/core@4.6.0)
+        specifier: 0.8.8
+        version: 0.8.8(@stencil/core@4.6.0)
       '@unocss/postcss':
         specifier: 0.57.1
         version: 0.57.1(postcss@8.4.31)
@@ -1878,8 +1878,8 @@ packages:
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
-  /@stencil/vue-output-target@0.8.6(@stencil/core@4.6.0):
-    resolution: {integrity: sha512-B1gQW8FWeU7x/KBPm9R28jYFGN5NsZTZR4jwfDMhKBmU1Q2dIxFY52ARhbrfj5tJQxKoxr2tQJD2S14r9t1v7w==}
+  /@stencil/vue-output-target@0.8.8(@stencil/core@4.6.0):
+    resolution: {integrity: sha512-xrpz92lmTuLgwY9CLgl2Q14+zBXfBuXiRS6uXFPfeaFo0pe+do8cZitOOQ8i8tcoCa/tAqgD9B9CD+yQehSIGg==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
