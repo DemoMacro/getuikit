@@ -53,6 +53,6 @@
     "@unocss/nuxt": "0.57.1"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "0.5.2"
+    "@nuxt/module-builder": "0.6.0"
   }
 }
