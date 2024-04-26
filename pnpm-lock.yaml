@@ -55,8 +55,8 @@ importers:
         specifier: 3.0.7
         version: 3.0.7
       uikit:
-        specifier: 3.17.6
-        version: 3.17.6
+        specifier: 3.20.8
+        version: 3.20.8
 
   packages/nuxt:
     dependencies:
@@ -9067,8 +9067,8 @@ packages:
   /ufo@1.5.3:
     resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
 
-  /uikit@3.17.6:
-    resolution: {integrity: sha512-8fSfR67hqEW5P1clHlw1LoUK4AM2aLuO73iLNwv7/pPUYa0JsTYZnpDahEKZOHwtYz+QIQDuncuQsLkX+MqTLw==}
+  /uikit@3.20.8:
+    resolution: {integrity: sha512-tfBoHgg6Cl1d7M937WaDYf8Ff84uSLw2qBdwbyM9yPzgWvJS6wqcKLqXqmmEcNAhlBDtWROBISKjdan+2TRgyA==}
     dev: true
 
   /ultrahtml@1.5.3:
