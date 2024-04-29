@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/DemoMacro/getuikit#readme",
   "dependencies": {
-    "@stencil/core": "4.6.0"
+    "@stencil/core": "4.17.2"
   },
   "devDependencies": {
     "@getuikit/css": "workspace:*",
